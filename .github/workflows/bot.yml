@@ -64,7 +64,7 @@ jobs:
               curl -s "https://api.telegram.org/bot${{ secrets.authToken }}/sendmessage" \
               --data "text=${*}&chat_id=${{ secrets.ChatId }}&parse_mode=Markdown&disable_notification=True"
           }
-          sendTG "*PrajjuS ShellBot Restarted*"
+          sendTG "*Sahils GitHub-Bot Restarted*"
       - name: Run shell-bot server
         timeout-minutes: 320
         continue-on-error: true
